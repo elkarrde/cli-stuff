@@ -1,0 +1,7 @@
+include "%L"   # import the default Compose file for your locale
+<Multi_key> <f> <f> <slash>		: "ƒ"
+<Multi_key> <8> <8>			: "∞"
+<Multi_key> <asterisk> <asterisk>	: "★"
+<Multi_key> <asterisk> <slash>		: "∗"
+<Multi_key> <asciitilde> <equal>	: "≈"
+<Multi_key> <less> <plus>		: "↵"
