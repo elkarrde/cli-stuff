@@ -1,0 +1,52 @@
+[alias]
+	st = status
+  sts = status -s
+
+  br = branch
+  cp = cherry-pick
+  cl = clone
+  ci = commit
+
+  diff = diff --word-diff
+  dc = diff --cached
+
+  lp = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  le = log --oneline --decorate  
+  lal = log --graph --oneline --decorate --all
+  lg = log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset' --abbrev-commit --date=relative
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
+  dl = "!git ll -1"
+  dlc = diff --cached HEAD^
+
+  find = "!git ls-files | grep -i"
+
+  co = checkout
+  cob = checkout -b
+
+  # list branches sorted by last modified
+  bra = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+  # list aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+
+  re = reset
+  re1 = reset HEAD^
+  re2 = reset HEAD^^
+  rehard = reset --hard
+  rehard1 = reset HEAD^ --hard
+  rehard2 = reset HEAD^^ --hard
+
+  stl = stash list
+  sta = stash apply
+  sts = stash save
+[user]
+	email = nfalica@gmail.com
+	name = elkarrde
+[merge]
+	tool = p4merge
