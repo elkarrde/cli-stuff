@@ -1,11 +1,11 @@
 [alias]
-	st = status
+  st = status
   sts = status -s
 
   br = branch
   cp = cherry-pick
   cl = clone
-  ci = commit
+  co = commit
 
   diff = diff --word-diff
   dc = diff --cached
