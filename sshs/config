@@ -1,0 +1,24 @@
+# Senec GitLab
+Host gitlab.senec.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_ed25519
+
+# 1xInternet GitLab
+Host git.1xinternet.de
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_alt_rsa
+
+# Github
+Host github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_sec_ed25519
+
+# Codeberg
+Host codeberg.org
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_sec_ed25519
+
+# Nvidia Gitlab
+Host gitlab-master.nvidia.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_nv_ed25519
